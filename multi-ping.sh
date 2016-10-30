@@ -6,9 +6,9 @@ for host in "$@"
 do
         if ping -c1 -w1 "${host}" > /dev/null 2>&1
         then
-                echo "${host} OK"
+                echo "${host} OK :)"
         else
-                echo "${host} inacessible"
+                echo "${host} inacessible :("
                 CODE_RETURN=1
         fi
 done
